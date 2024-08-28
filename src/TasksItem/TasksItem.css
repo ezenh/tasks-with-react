@@ -1,0 +1,49 @@
+.TodoItem {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    min-height: 40px;
+    padding: 0 12px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all .5s ease;
+}
+
+.TodoItem--completed {
+    opacity: .5;
+}
+.TodoItem-p--completed {
+    text-decoration: line-through;
+}
+.Icon {
+    width: 20px;
+    height: 20px;
+}
+.Icon-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: linear-gradient(rgb(69 184 229), rgb(113 53 124));
+    -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 50%);
+    mask-image: radial-gradient(circle, rgb(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 50%);
+    transition: all .5s ease;
+    }
+    .Icon-check--completed {
+        -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1 ) 0%);
+        mask-image: radial-gradient(circle, rgb(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1 ) 0%);
+        transition: all .5s ease;
+    }
+    .Icon-check img {
+        width: 10px;
+        height: 10px;
+    }
+
+.Icon-delete {
+    padding: 4px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.07);
+    margin-left: auto;
+}

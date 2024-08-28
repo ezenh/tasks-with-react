@@ -1,0 +1,23 @@
+.TasksSearch {
+    margin: 16px 0 12px 0;
+    width: 200px;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 12px;
+    background-color: rgb(255,255,255, .5);
+    /* margin-top: 16px; */
+}
+
+.TasksSearchLoading {
+    margin: 16px 0 12px 0;
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    padding: 0px 12px;
+    background: linear-gradient(45deg, rgba(0,0,0, .1) 25%, rgba(0,0,0, .1), rgba(0,0,0, .15), rgba(0,0,0, .1));
+    background-size: 200% 100%;
+    animation: loadingAnimation 1.5s ease infinite;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: all .5s ease;
+}
